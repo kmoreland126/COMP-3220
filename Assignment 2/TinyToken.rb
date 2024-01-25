@@ -15,30 +15,25 @@ class Token
 	RPAREN = ")"
 	ADDOP  = "+"
 	WS = "whitespace"
-	UNKWM = "unknown"
+    UNKWN = "unknown"
+
 # add the rest of the tokens needed based on the grammar
 # specified in the Scanner class "TinyScanner.rb"
+	INTNUM = "num"
+	ID = "id"
 	SUBOP = "-"
 	MULTOP = "*"
 	DIVOP = "/"
-	EQOP = "="
 	PRINT = "print"
-	INT = "int"
-	ID = "id"
-	ASSIGN = ":="
+	EQUALSOP = "="
+	LESS_THAN = "<"
+	GREATER_THAN = ">"
+	AND = "&"
 	IF = "if"
 	THEN = "then"
-	ELSE = "else"
-	END_KEYWORD = "end"
-	REPEAT = "repeat"
-	UNTIL = "until"
-	READ = "read"
-	WRITE = "write"
-	EPSILON = "epsilon"
-	ALPHA = "alpha"
-	DIGIT = "digit"
-
-
+	WHILE = "while"
+	SEMICOLON = ";"
+	EXCLAMATION = "!"
 #constructor
 	def initialize(type,text)
 		@type = type
